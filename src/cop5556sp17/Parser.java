@@ -3,9 +3,12 @@ package cop5556sp17;
 /**
  * Created by saima_000 on 2/12/2017.
  */
+import cop5556sp17.AST.*;
 import cop5556sp17.Scanner.Kind;
 import static cop5556sp17.Scanner.Kind.*;
 import cop5556sp17.Scanner.Token;
+
+import java.util.ArrayList;
 
 public class Parser {
 
@@ -48,10 +51,10 @@ public class Parser {
      *
      * @throws SyntaxException
      */
-    void parse() throws SyntaxException {
-        program();
+    Program parse() throws SyntaxException {
+        Program program = program();
         matchEOF();
-        return;
+        return program;
     }
 
 
@@ -60,18 +63,19 @@ public class Parser {
      * program ::=  IDENT param_dec ( , param_dec )*   block
      * @throws SyntaxException
      */
-    void program() throws SyntaxException {
+    Program program() throws SyntaxException {
+        Token firstToken = t;
+        ArrayList<ParamDec> paramDecs = new ArrayList<ParamDec>();
         match(IDENT);
-
         Kind kind = t.kind;
         if(kind == KW_URL || kind == KW_FILE || kind == KW_INTEGER || kind == KW_BOOLEAN) {
-            paramDec();
+            paramDecs.add(paramDec());
             while(t.kind == COMMA) {
                 consume();
-                paramDec();
+                paramDecs.add(paramDec());
             }
         }
-        block();
+        return new Program(firstToken, paramDecs, block());
     }
 
 
@@ -79,7 +83,8 @@ public class Parser {
      * paramDec ::= ( KW_URL | KW_FILE | KW_INTEGER | KW_BOOLEAN ) IDENT
      * @throws SyntaxException
      */
-    void paramDec() throws SyntaxException {
+    ParamDec paramDec() throws SyntaxException {
+        Token firstToken = t;
         Kind kind = t.kind;
         if (kind == KW_URL || kind == KW_FILE || kind == KW_INTEGER || kind == KW_BOOLEAN) {
             consume();
@@ -87,7 +92,9 @@ public class Parser {
         else {
             throw new SyntaxException("Expected 'paramDec'");
         }
+        Token identToken = t;
         match(IDENT);
+        return new ParamDec(firstToken, identToken);
     }
 
 
@@ -95,17 +102,21 @@ public class Parser {
      * block ::= { ( dec | statement) * }
      * @throws SyntaxException
      */
-    void block() throws SyntaxException {
+    Block block() throws SyntaxException {
+        Token firstToken = t;
+        ArrayList<Dec> decList = new ArrayList<Dec>();
+        ArrayList<Statement> stmtList = new ArrayList<Statement>();
         match(LBRACE);
         while(!t.isKind(EOF) && !t.isKind(RBRACE)) {
             if(t.kind == KW_INTEGER || t.kind == KW_BOOLEAN || t.kind == KW_IMAGE || t.kind == KW_FRAME) {
-                dec();
+                decList.add(dec());
             }
             else {
-                statement();
+                stmtList.add(statement());
             }
         }
         match(RBRACE);
+        return new Block(firstToken, decList, stmtList);
     }
 
 
@@ -113,7 +124,8 @@ public class Parser {
      * dec ::= (  KW_INTEGER | KW_BOOLEAN | KW_IMAGE | KW_FRAME)    IDENT
      * @throws SyntaxException
      */
-    void dec() throws SyntaxException {
+    Dec dec() throws SyntaxException {
+        Token firstToken = t;
         Kind kind = t.kind;
         if(kind == KW_INTEGER || kind == KW_BOOLEAN || kind == KW_IMAGE || kind == KW_FRAME) {
             consume();
@@ -121,7 +133,9 @@ public class Parser {
         else {
             throw new SyntaxException("Expected 'dec'");
         }
+        Token identToken = t;
         match(IDENT);
+        return new Dec(firstToken, identToken);
     }
 
 
@@ -129,25 +143,29 @@ public class Parser {
      * statement ::= OP_SLEEP expression ; | whileStatement | ifStatement | chain ; | assign ;
      * @throws SyntaxException
      */
-    void statement() throws SyntaxException {
+    Statement statement() throws SyntaxException {
         if(t.kind == OP_SLEEP) {
+            Token firstToken = t;
             match(OP_SLEEP);
-            expression();
+            Expression expr = expression();
             match(SEMI);
+            return new SleepStatement(firstToken, expr);
         }
         else if(t.kind == KW_WHILE) {
-            whileProduction();
+            return whileProduction();
         }
         else if(t.kind == KW_IF) {
-            ifProduction();
+            return ifProduction();
         }
         else if(t.kind == IDENT && scanner.peek().kind == ASSIGN) {
-            assign();
+            AssignmentStatement stmt = assign();
             match(SEMI);
+            return stmt;
         }
         else {
-            chain();
+            Chain chain = chain();
             match(SEMI);
+            return chain;
         }
     }
 
@@ -156,25 +174,36 @@ public class Parser {
      * assign ::= IDENT ASSIGN expression
      * @throws SyntaxException
      */
-    void assign() throws SyntaxException {
+    AssignmentStatement assign() throws SyntaxException {
+        Token ident = t;
         match(IDENT);
         match(ASSIGN);
-        expression();
+        Expression expr = expression();
+        return new AssignmentStatement(ident, new IdentLValue(ident), expr);
     }
 
 
     /**
      * chain ::= chainElem arrowOp chainElem ( arrowOp chainElem)*
      * @throws SyntaxException
+     *
+     * TODO - Find about the firstToken.
+     * TODO - Find about the difference between chainElement/binaryChainElement.
      */
-    void chain() throws SyntaxException {
-        chainElem();
+    Chain chain() throws SyntaxException {
+        Token firstToken = t;
+        Chain chain = chainElem();
+        Token arrayOp = t;
         arrowOp();
-        chainElem();
+        ChainElem chainElem = chainElem();
+        BinaryChain binaryChain = new BinaryChain(firstToken, chain, arrayOp, chainElem);
         while(t.kind == ARROW || t.kind == BARARROW ) {
+            arrayOp = t;
             arrowOp();
-            chainElem();
+            chainElem = chainElem();
+            binaryChain = new BinaryChain(firstToken, binaryChain, arrayOp, chainElem);
         }
+        return binaryChain;
     }
 
 
@@ -182,12 +211,14 @@ public class Parser {
      * whileStatement ::= KW_WHILE ( expression ) block
      * @throws SyntaxException
      */
-    void whileProduction() throws SyntaxException {
+    WhileStatement whileProduction() throws SyntaxException {
+        Token firstToken = t;
         match(KW_WHILE);
         match(LPAREN);
-        expression();
+        Expression expr = expression();
         match(RPAREN);
-        block();
+        Block block = block();
+        return new WhileStatement(firstToken, expr, block);
     }
 
 
@@ -195,12 +226,14 @@ public class Parser {
      * ifStatement ::= KW_IF ( expression ) block
      * @throws SyntaxException
      */
-    void ifProduction() throws SyntaxException {
+    IfStatement ifProduction() throws SyntaxException {
+        Token firstToken = t;
         match(KW_IF);
         match(LPAREN);
-        expression();
+        Expression expr = expression();
         match(RPAREN);
-        block();
+        Block block = block();
+        return new IfStatement(firstToken, expr, block);
     }
 
 
@@ -222,21 +255,29 @@ public class Parser {
      * chainElem ::= IDENT | filterOp arg | frameOp arg | imageOp arg
      * @throws SyntaxException
      */
-    void chainElem() throws SyntaxException {
+    ChainElem chainElem() throws SyntaxException {
         if(t.kind == IDENT) {
+            Token firstToken = t;
             match(IDENT);
+            return new IdentChain(firstToken);
         }
         else if(t.kind == OP_BLUR || t.kind == OP_GRAY || t.kind == OP_CONVOLVE) {
+            Token firstToken = t;
             filterOp();
-            arg();
+            Tuple tuple = arg();
+            return new FilterOpChain(firstToken, tuple);
         }
         else if(t.kind == KW_SHOW || t.kind == KW_HIDE || t.kind == KW_MOVE || t.kind == KW_XLOC || t.kind == KW_YLOC) {
+            Token firstToken = t;
             frameOp();
-            arg();
+            Tuple tuple = arg();
+            return new FrameOpChain(firstToken, tuple);
         }
         else if(t.kind == OP_WIDTH || t.kind == OP_HEIGHT || t.kind == KW_SCALE) {
+            Token firstToken = t;
             imageOp();
-            arg();
+            Tuple tuple = arg();
+            return new ImageOpChain(firstToken, tuple);
         }
         else {
             throw new SyntaxException("Expected 'chainElem'");
@@ -289,16 +330,19 @@ public class Parser {
      * arg ::= ε | ( expression ( , expression)* )
      * @throws SyntaxException
      */
-    void arg() throws SyntaxException {
+    Tuple arg() throws SyntaxException {
+        Token firstToken = t;
+        ArrayList<Expression> list = new ArrayList<Expression>();
         if(t.kind == LPAREN) {
             match(LPAREN);
-            expression();
+            list.add(expression());
             while(t.kind == COMMA) {
                 match(COMMA);
-                expression();
+                list.add(expression());
             }
             match(RPAREN);
         }
+        return new Tuple(firstToken, list);
     }
 
 
@@ -306,12 +350,15 @@ public class Parser {
      * expression ∷= term ( relOp term)*
      * @throws SyntaxException
      */
-    void expression() throws SyntaxException {
-        term();
+    Expression expression() throws SyntaxException {
+        Token firstToken = t;
+        Expression expr = term();
         while(t.kind == LT || t.kind == LE || t.kind == GT || t.kind == GE || t.kind == EQUAL || t.kind == NOTEQUAL) {
+            Token op = t;
             relOp();
-            term();
+            expr = new BinaryExpression(firstToken, expr, op, term());
         }
+        return expr;
     }
 
 
@@ -319,12 +366,15 @@ public class Parser {
      * term ∷= elem ( weakOp elem)*
      * @throws SyntaxException
      */
-    void term() throws SyntaxException {
-        elem();
+    Expression term() throws SyntaxException {
+        Token firstToken = t;
+        Expression expr = elem();
         while(t.kind == PLUS || t.kind == MINUS || t.kind == OR) {
+            Token op = t;
             weakOP();
-            elem();
+            expr = new BinaryExpression(firstToken, expr, op, elem());
         }
+        return expr;
     }
 
 
@@ -332,12 +382,15 @@ public class Parser {
      * elem ∷= factor ( strongOp factor)*
      * @throws SyntaxException
      */
-    void elem() throws SyntaxException {
-        factor();
+    Expression elem() throws SyntaxException {
+        Token firstToken = t;
+        Expression expr = factor();
         while(t.kind == TIMES || t.kind == DIV || t.kind == AND || t.kind == MOD) {
+            Token op = t;
             strongOp();
-            factor();
+            expr = new BinaryExpression(firstToken, expr, op, factor());
         }
+        return expr;
     }
 
 
@@ -346,17 +399,31 @@ public class Parser {
      | KW_SCREENWIDTH | KW_SCREENHEIGHT | ( expression )
      * @throws SyntaxException
      */
-    void factor() throws SyntaxException {
+    Expression factor() throws SyntaxException {
         Kind kind = t.kind;
+        Token firstToken;
         switch (kind) {
-            case IDENT: case INT_LIT: case KW_TRUE: case KW_FALSE: case KW_SCREENWIDTH: case KW_SCREENHEIGHT:
+            case IDENT:
+                firstToken = t;
                 consume();
-                break;
+                return new IdentExpression(firstToken);
+            case INT_LIT:
+                firstToken = t;
+                consume();
+                return new IntLitExpression(firstToken);
+            case KW_TRUE: case KW_FALSE:
+                firstToken = t;
+                consume();
+                return new BooleanLitExpression(firstToken);
+            case KW_SCREENWIDTH: case KW_SCREENHEIGHT:
+                firstToken = t;
+                consume();
+                return new ConstantExpression(firstToken);
             case LPAREN:
                 consume();
-                expression();
+                Expression expression = expression();
                 match(RPAREN);
-                break;
+                return expression;
             default:
                 //you will want to provide a more useful error message
                 throw new SyntaxException("illegal factor");
