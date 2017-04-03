@@ -5,6 +5,7 @@ import cop5556sp17.Scanner.Token;
 public class Dec extends ASTNode {
 	
 	final Token ident;
+	Type.TypeName typeName;
 
 	public Dec(Token firstToken, Token ident) {
 		super(firstToken);
@@ -20,6 +21,13 @@ public class Dec extends ASTNode {
 		return ident;
 	}
 
+	public Type.TypeName getTypeName() {
+		return typeName;
+	}
+
+	public void setTypeName(Type.TypeName typeName) {
+		this.typeName = typeName;
+	}
 	@Override
 	public String toString() {
 		return "Dec [ident=" + ident + ", firstToken=" + firstToken + "]";

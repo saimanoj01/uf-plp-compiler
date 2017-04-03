@@ -1,5 +1,6 @@
 package cop5556sp17.AST;
 
+import cop5556sp17.Scanner;
 import cop5556sp17.Scanner.Token;
 
 public class ImageOpChain extends ChainElem {
@@ -9,6 +10,10 @@ public class ImageOpChain extends ChainElem {
 	public ImageOpChain(Token firstToken, Tuple arg) {
 		super(firstToken);
 		this.tuple = arg;
+	}
+
+	public Scanner.Kind getKind() {
+		return firstToken.kind;
 	}
 
 	public Tuple getArg() {

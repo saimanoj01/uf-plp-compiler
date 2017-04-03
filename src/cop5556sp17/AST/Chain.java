@@ -4,7 +4,16 @@ import cop5556sp17.Scanner.Token;
 
 
 public abstract class Chain extends Statement {
-	
+	Type.TypeName typeName;
+
+	public Type.TypeName getTypeName() {
+		return typeName;
+	}
+
+	public void setTypeName(Type.TypeName typeName) {
+		this.typeName = typeName;
+	}
+
 	public Chain(Token firstToken) {
 		super(firstToken);
 	}
