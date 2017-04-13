@@ -6,6 +6,10 @@ public abstract class Expression extends ASTNode {
 
 	Type.TypeName typeName;
 
+	public Type.TypeName getType() {
+		return typeName;
+	}
+
 	public Type.TypeName getTypeName() {
 		return typeName;
 	}

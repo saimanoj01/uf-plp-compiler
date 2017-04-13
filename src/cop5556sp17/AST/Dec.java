@@ -6,11 +6,20 @@ public class Dec extends ASTNode {
 	
 	final Token ident;
 	Type.TypeName typeName;
+	int slotNo;
 
 	public Dec(Token firstToken, Token ident) {
 		super(firstToken);
 
 		this.ident = ident;
+	}
+
+	public void setSlotNo(int slotNo) {
+		this.slotNo = slotNo;
+	}
+
+	public int getSlotNo() {
+		return slotNo;
 	}
 
 	public Token getType() {
