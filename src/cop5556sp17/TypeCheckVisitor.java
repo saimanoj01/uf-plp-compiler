@@ -9,6 +9,8 @@ import java.util.List;
 import cop5556sp17.Scanner.Kind;
 import cop5556sp17.Scanner.LinePos;
 import cop5556sp17.Scanner.Token;
+import cop5556sp17.SymbolTable;
+
 import static cop5556sp17.AST.Type.TypeName.*;
 import static cop5556sp17.Scanner.Kind.ARROW;
 import static cop5556sp17.Scanner.Kind.KW_HIDE;
@@ -68,8 +70,11 @@ public class TypeCheckVisitor implements ASTVisitor {
 		else if(chain.getTypeName().isType(IMAGE) && (op.isKind(ARROW)) && (chainElem instanceof ImageOpChain) && (binaryChain.getE1().getFirstToken().getText().contentEquals(KW_SCALE.getText()))) {
 			binaryChain.setTypeName(IMAGE);
 		}
-		else if(chain.getTypeName().isType(IMAGE) && (op.isKind(ARROW)) && (chainElem instanceof IdentChain)) {
+		else if(chain.getTypeName().isType(IMAGE) && (op.isKind(ARROW)) && (chainElem instanceof IdentChain) && (chainElem.getTypeName().isType(IMAGE))) {
 			binaryChain.setTypeName(IMAGE);
+		}
+		else if(chain.getTypeName().isType(INTEGER) && (op.isKind(ARROW)) && (chainElem instanceof IdentChain) && (chainElem.getTypeName().isType(INTEGER))) {
+			binaryChain.setTypeName(INTEGER);
 		}
 		else {
 			throw new TypeCheckException("Invalid type - BinaryChain");
@@ -85,28 +90,34 @@ public class TypeCheckVisitor implements ASTVisitor {
 		expression1.visit(this, null);
 		Token op = binaryExpression.getOp();
 
-		if(expression0.getTypeName() == TypeName.INTEGER && expression1.getTypeName() == TypeName.INTEGER && (PLUS.getText().contentEquals(op.getText()) || MINUS.getText().contentEquals(op.getText()))) {
+		if(expression0.getTypeName() == TypeName.INTEGER && expression1.getTypeName() == TypeName.INTEGER && (op.isKind(PLUS) || op.isKind(MINUS))) {
 			binaryExpression.setTypeName(TypeName.INTEGER);
 		}
-		else if(expression0.getTypeName() == TypeName.IMAGE && expression1.getTypeName() == TypeName.IMAGE && (PLUS.getText().contentEquals(op.getText()) || MINUS.getText().contentEquals(op.getText()))) {
+		else if(expression0.getTypeName() == TypeName.IMAGE && expression1.getTypeName() == TypeName.IMAGE && (op.isKind(PLUS) || op.isKind(MINUS))) {
 			binaryExpression.setTypeName(TypeName.IMAGE);
 		}
-		else if(expression0.getTypeName() == TypeName.INTEGER && expression1.getTypeName() == TypeName.INTEGER && (TIMES.getText().contentEquals(op.getText()) || DIV.getText().contentEquals(op.getText()))) {
+		else if(expression0.getTypeName() == TypeName.INTEGER && expression1.getTypeName() == TypeName.INTEGER && (op.isKind(TIMES) || op.isKind(DIV) || op.isKind(MOD))) {
 			binaryExpression.setTypeName(TypeName.INTEGER);
 		}
 		else if(expression0.getTypeName() == TypeName.INTEGER && expression1.getTypeName() == TypeName.IMAGE && (TIMES.getText().contentEquals(op.getText()))) {
 			binaryExpression.setTypeName(TypeName.IMAGE);
 		}
-		else if(expression0.getTypeName() == TypeName.IMAGE && expression1.getTypeName() == TypeName.INTEGER && (TIMES.getText().contentEquals(op.getText()))) {
+		else if(expression0.getTypeName() == TypeName.IMAGE && expression1.getTypeName() == TypeName.INTEGER && (op.isKind(TIMES))) {
+			binaryExpression.setTypeName(TypeName.IMAGE);
+		}
+		else if(expression0.getTypeName() == TypeName.IMAGE && expression1.getTypeName() == TypeName.INTEGER && (op.isKind(Kind.DIV) || op.isKind(Kind.MOD))) {
 			binaryExpression.setTypeName(TypeName.IMAGE);
 		}
 		else if(expression0.getTypeName() == TypeName.INTEGER && expression1.getTypeName() == TypeName.INTEGER && (LE.getText().contentEquals(op.getText()) || LT.getText().contentEquals(op.getText()) || GE.getText().contentEquals(op.getText()) || GT.getText().contentEquals(op.getText()))) {
 			binaryExpression.setTypeName(TypeName.BOOLEAN);
 		}
+		else if(expression0.getTypeName() == TypeName.BOOLEAN && expression1.getTypeName() == TypeName.BOOLEAN && (op.isKind(AND) || op.isKind(OR))) {
+			binaryExpression.setTypeName(TypeName.BOOLEAN);
+		}
 		else if(expression0.getTypeName() == TypeName.BOOLEAN && expression1.getTypeName() == TypeName.BOOLEAN && (LE.getText().contentEquals(op.getText()) || LT.getText().contentEquals(op.getText()) || GE.getText().contentEquals(op.getText()) || GT.getText().contentEquals(op.getText()))) {
 			binaryExpression.setTypeName(TypeName.BOOLEAN);
 		}
-		else if((EQUAL.getText().contentEquals(op.getText()) || NOTEQUAL.getText().contentEquals(op.getText())) && expression0.getTypeName() == expression1.getTypeName()) {
+		else if((op.isKind(EQUAL) || op.isKind(NOTEQUAL)) && expression0.getTypeName() == expression1.getTypeName()) {
 			binaryExpression.setTypeName(TypeName.BOOLEAN);
 		}
 		else {
@@ -188,6 +199,7 @@ public class TypeCheckVisitor implements ASTVisitor {
 		Dec dec = symtab.lookup(identChain.getFirstToken().getText());
 		if(dec != null) {
 			identChain.setTypeName(dec.getTypeName());
+			identChain.setDec(dec);
 		}
 		else {
 			throw new TypeCheckException("Identifier " + identChain.getFirstToken().getText() + " not declared or out of scope");

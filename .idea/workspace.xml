@@ -2,68 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3b0b8cd-c962-4f64-b16c-ee71a2a3e07e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cop5556sp17/CodeGenUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cop5556sp17/CodeGenVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cop5556sp17/CodeGenVisitorTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Test.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cop5556sp17/Compiler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cop5556sp17/PLPRuntimeFilterOps.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cop5556sp17/PLPRuntimeFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cop5556sp17/PLPRuntimeImageIO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cop5556sp17/PLPRuntimeImageOps.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cop5556sp17/PLPRuntimeLog.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/booleanComp1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/booleanComp2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/compProg2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/cop5556sp17/ASTTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/cop5556sp17/ParserTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/cop5556sp17/ScannerTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/cop5556sp17/TypeCheckVisitorTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cop5556sp17/ASTTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cop5556sp17/CodeGenVisitorTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cop5556sp17/ParserTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cop5556sp17/ScannerTest.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/cop5556sp17/Test.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/cop5556sp17/AST/Dec.class" afterPath="$PROJECT_DIR$/bin/cop5556sp17/AST/Dec.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/cop5556sp17/AST/Expression.class" afterPath="$PROJECT_DIR$/bin/cop5556sp17/AST/Expression.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cop5556sp17/TypeCheckVisitorTest.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/cop5556sp17/AST/IdentChain.class" afterPath="$PROJECT_DIR$/bin/cop5556sp17/AST/IdentChain.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/cop5556sp17/AST/Type$TypeName.class" afterPath="$PROJECT_DIR$/bin/cop5556sp17/AST/Type$TypeName.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/ASTNode.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/ASTNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/ASTVisitor.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/ASTVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/AssignmentStatement.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/AssignmentStatement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/BinaryChain.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/BinaryChain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/BinaryExpression.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/BinaryExpression.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Block.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Block.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/BooleanLitExpression.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/BooleanLitExpression.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Chain.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Chain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/ChainElem.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/ChainElem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/ConstantExpression.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/ConstantExpression.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Dec.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Dec.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Expression.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Expression.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/FilterOpChain.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/FilterOpChain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/FrameOpChain.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/FrameOpChain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/IdentChain.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/IdentChain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/IdentExpression.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/IdentExpression.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/IdentLValue.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/IdentLValue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/IfStatement.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/IfStatement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/ImageOpChain.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/ImageOpChain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/IntLitExpression.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/IntLitExpression.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/ParamDec.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/ParamDec.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Program.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Program.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/SleepStatement.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/SleepStatement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Statement.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Statement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Tuple.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Tuple.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Type$1.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Type$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Type$TypeName.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Type$TypeName.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Type.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/Type.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/WhileStatement.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/AST/WhileStatement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/ASTTest.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/ASTTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Parser$1.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Parser$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Parser$SyntaxException.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Parser$SyntaxException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Parser$UnimplementedFeatureException.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Parser$UnimplementedFeatureException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Parser.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Parser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/ParserTest.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/ParserTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$1.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$IllegalCharException.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$IllegalCharException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$IllegalNumberException.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$IllegalNumberException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$Kind.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$Kind.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$LinePos.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$LinePos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$State.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$State.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$Token.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner$Token.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Scanner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/ScannerTest.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/ScannerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/SymbolTable.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/SymbolTable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/TypeCheckVisitor$TypeCheckException.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/TypeCheckVisitor$TypeCheckException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/cop5556sp17/CodeGenUtils$DynamicClassLoader.class" afterPath="$PROJECT_DIR$/bin/cop5556sp17/CodeGenUtils$DynamicClassLoader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/cop5556sp17/CodeGenUtils.class" afterPath="$PROJECT_DIR$/bin/cop5556sp17/CodeGenUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/cop5556sp17/CodeGenVisitor.class" afterPath="$PROJECT_DIR$/bin/cop5556sp17/CodeGenVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/cop5556sp17/CodeGenVisitorTest.class" afterPath="$PROJECT_DIR$/bin/cop5556sp17/CodeGenVisitorTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/cop5556sp17/TypeCheckVisitor$TypeCheckException.class" afterPath="$PROJECT_DIR$/bin/cop5556sp17/TypeCheckVisitor$TypeCheckException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/cop5556sp17/TypeCheckVisitor.class" afterPath="$PROJECT_DIR$/bin/cop5556sp17/TypeCheckVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/CodeGenUtils$1.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/CodeGenUtils$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/CodeGenUtils$DynamicClassLoader.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/CodeGenUtils$DynamicClassLoader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/CodeGenUtils.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/CodeGenUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/CodeGenVisitor$1.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/CodeGenVisitor$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/CodeGenVisitor.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/CodeGenVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/CodeGenVisitorTest.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/CodeGenVisitorTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Test.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/Test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/TypeCheckVisitor.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/TypeCheckVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/TypeCheckVisitorTest.class" afterPath="$PROJECT_DIR$/out/production/uf-plp-compiler/cop5556sp17/TypeCheckVisitorTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cop5556sp17/AST/Dec.java" afterPath="$PROJECT_DIR$/src/cop5556sp17/AST/Dec.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cop5556sp17/AST/Expression.java" afterPath="$PROJECT_DIR$/src/cop5556sp17/AST/Expression.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cop5556sp17/AST/IdentChain.java" afterPath="$PROJECT_DIR$/src/cop5556sp17/AST/IdentChain.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cop5556sp17/AST/Type.java" afterPath="$PROJECT_DIR$/src/cop5556sp17/AST/Type.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uf-plp-compiler.iml" afterPath="$PROJECT_DIR$/uf-plp-compiler.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cop5556sp17/CodeGenUtils.java" afterPath="$PROJECT_DIR$/src/cop5556sp17/CodeGenUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cop5556sp17/CodeGenVisitor.java" afterPath="$PROJECT_DIR$/src/cop5556sp17/CodeGenVisitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cop5556sp17/TypeCheckVisitor.java" afterPath="$PROJECT_DIR$/src/cop5556sp17/TypeCheckVisitor.java" />
     </list>
     <ignored path="uf-plp-compiler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,53 +68,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CodeGenVisitor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cop5556sp17/CodeGenVisitor.java">
+      <file leaf-file-name="IdentChain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/IdentChain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="481" column="29" selection-start-line="481" selection-start-column="29" selection-end-line="481" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="306">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeGenVisitorTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cop5556sp17/CodeGenVisitorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scanner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Scanner.java">
+      <file leaf-file-name="TypeCheckVisitor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cop5556sp17/TypeCheckVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="400" column="11" selection-start-line="400" selection-start-column="7" selection-end-line="400" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Program.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/Program.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -173,16 +124,20 @@
         <option value="$PROJECT_DIR$/src/cop5556sp17/AST/FrameOpChain.java" />
         <option value="$PROJECT_DIR$/src/cop5556sp17/AST/ImageOpChain.java" />
         <option value="$PROJECT_DIR$/src/cop5556sp17/SymbolTable.java" />
-        <option value="$PROJECT_DIR$/src/cop5556sp17/TypeCheckVisitor.java" />
         <option value="$PROJECT_DIR$/src/cop5556sp17/AST/TypeCheckVisitorTest.java" />
-        <option value="$PROJECT_DIR$/src/cop5556sp17/TypeCheckVisitorTest.java" />
-        <option value="$PROJECT_DIR$/src/cop5556sp17/AST/Type.java" />
         <option value="$PROJECT_DIR$/src/cop5556sp17/AST/Expression.java" />
         <option value="$PROJECT_DIR$/src/cop5556sp17/AST/Dec.java" />
         <option value="$PROJECT_DIR$/src/cop5556sp17/Name.java" />
+        <option value="$PROJECT_DIR$/src/cop5556sp17/AST/IdentChain.java" />
+        <option value="$PROJECT_DIR$/src/cop5556sp17/CodeGenUtils.java" />
+        <option value="$PROJECT_DIR$/src/cop5556sp17/booleanComp1.java" />
+        <option value="$PROJECT_DIR$/src/cop5556sp17/AST/Type.java" />
         <option value="$PROJECT_DIR$/src/cop5556sp17/Test.java" />
+        <option value="$PROJECT_DIR$/src/cop5556sp17/TypeCheckVisitorTest.java" />
         <option value="$PROJECT_DIR$/src/cop5556sp17/CodeGenVisitor.java" />
+        <option value="$PROJECT_DIR$/src/cop5556sp17/Test/ParserTest4.java" />
         <option value="$PROJECT_DIR$/src/cop5556sp17/CodeGenVisitorTest.java" />
+        <option value="$PROJECT_DIR$/src/cop5556sp17/TypeCheckVisitor.java" />
       </list>
     </option>
   </component>
@@ -283,15 +238,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="production" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uf-plp-compiler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,8 +262,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../UF/Spring 2017/PLP/Project/ASM Jars/asm-util-5.1.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -309,8 +272,8 @@
       <recent name="D:\Study\Code\uf-plp-compiler\src\cop5556sp17\AST" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CodeGenVisitorTest.emptyProg1">
-    <configuration default="false" name="CodeGenVisitorTest.emptyProg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CodeGenVisitorTest">
+    <configuration default="false" name="ASTTest_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="cop5556sp17.*" />
@@ -320,60 +283,8 @@
       <module name="uf-plp-compiler" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cop5556sp17" />
-      <option name="MAIN_CLASS_NAME" value="cop5556sp17.CodeGenVisitorTest" />
-      <option name="METHOD_NAME" value="emptyProg" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ScannerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cop5556sp17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="uf-plp-compiler" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cop5556sp17" />
-      <option name="MAIN_CLASS_NAME" value="cop5556sp17.ScannerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cop5556sp17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="uf-plp-compiler" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cop5556sp17" />
-      <option name="MAIN_CLASS_NAME" value="cop5556sp17.ParserTest" />
+      <option name="PACKAGE_NAME" value="cop5556sp17.Test" />
+      <option name="MAIN_CLASS_NAME" value="cop5556sp17.ASTTest_1" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -398,7 +309,7 @@
       <module name="uf-plp-compiler" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cop5556sp17" />
+      <option name="PACKAGE_NAME" value="cop5556sp17.Test" />
       <option name="MAIN_CLASS_NAME" value="cop5556sp17.CodeGenVisitorTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
@@ -414,7 +325,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CodeGenVisitorTest.emptyProg1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MadamTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="cop5556sp17.*" />
@@ -424,10 +335,62 @@
       <module name="uf-plp-compiler" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cop5556sp17" />
-      <option name="MAIN_CLASS_NAME" value="cop5556sp17.CodeGenVisitorTest" />
-      <option name="METHOD_NAME" value="emptyProg1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="cop5556sp17.Test" />
+      <option name="MAIN_CLASS_NAME" value="cop5556sp17.MadamTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="testcases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cop5556sp17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="uf-plp-compiler" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cop5556sp17.Test" />
+      <option name="MAIN_CLASS_NAME" value="cop5556sp17.testcases" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TypeCheckVisitorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cop5556sp17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="uf-plp-compiler" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cop5556sp17.Test" />
+      <option name="MAIN_CLASS_NAME" value="cop5556sp17.TypeCheckVisitorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -868,19 +831,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CodeGenVisitorTest.emptyProg" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ScannerTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ParserTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CodeGenVisitorTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CodeGenVisitorTest.emptyProg1" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ASTTest_1" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CodeGenVisitorTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MadamTests" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.testcases" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TypeCheckVisitorTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CodeGenVisitorTest.emptyProg1" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CodeGenVisitorTest.emptyProg" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CodeGenVisitorTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ParserTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ScannerTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CodeGenVisitorTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TypeCheckVisitorTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.testcases" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MadamTests" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ASTTest_1" />
       </list>
     </recent_temporary>
   </component>
@@ -921,75 +884,83 @@
       <workItem from="1491357450901" duration="67000" />
       <workItem from="1491372608637" duration="141000" />
       <workItem from="1491888977619" duration="3031000" />
-      <workItem from="1492047558382" duration="6386000" />
+      <workItem from="1492047558382" duration="8248000" />
+      <workItem from="1492113680031" duration="16779000" />
+      <workItem from="1492185360658" duration="6465000" />
+      <workItem from="1492275200996" duration="24366000" />
+      <workItem from="1492706050934" duration="52368000" />
+      <workItem from="1492811469771" duration="5586000" />
+      <workItem from="1492823218041" duration="1593000" />
+      <workItem from="1492825614038" duration="70000" />
+      <workItem from="1492828154673" duration="224000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CodeGenVisitorTest_emptyProg - 2017.04.12 at 23h 06m 49s.xml">
-      <configuration name="CodeGenVisitorTest.emptyProg" configurationId="JUnit" />
+    <history-entry file="CodeGenVisitorTest - 2017.04.21 at 21h 16m 56s.xml">
+      <configuration name="CodeGenVisitorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodeGenVisitorTest_emptyProg - 2017.04.12 at 23h 12m 42s.xml">
-      <configuration name="CodeGenVisitorTest.emptyProg" configurationId="JUnit" />
+    <history-entry file="CodeGenVisitorTest - 2017.04.21 at 21h 33m 34s.xml">
+      <configuration name="CodeGenVisitorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodeGenVisitorTest_emptyProg - 2017.04.12 at 23h 20m 55s.xml">
-      <configuration name="CodeGenVisitorTest.emptyProg" configurationId="JUnit" />
+    <history-entry file="CodeGenVisitorTest - 2017.04.21 at 21h 48m 01s.xml">
+      <configuration name="CodeGenVisitorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodeGenVisitorTest_emptyProg1 - 2017.04.12 at 23h 15m 01s.xml">
-      <configuration name="CodeGenVisitorTest.emptyProg1" configurationId="JUnit" />
+    <history-entry file="MadamTests - 2017.04.21 at 21h 19m 08s.xml">
+      <configuration name="MadamTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodeGenVisitorTest_emptyProg1 - 2017.04.12 at 23h 15m 16s.xml">
-      <configuration name="CodeGenVisitorTest.emptyProg1" configurationId="JUnit" />
+    <history-entry file="ParserTest2 - 2017.04.21 at 21h 16m 43s.xml">
+      <configuration name="ParserTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodeGenVisitorTest_emptyProg1 - 2017.04.12 at 23h 16m 37s.xml">
-      <configuration name="CodeGenVisitorTest.emptyProg1" configurationId="JUnit" />
+    <history-entry file="TypeCheckVisitorTest - 2017.04.21 at 21h 18m 23s.xml">
+      <configuration name="TypeCheckVisitorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodeGenVisitorTest_emptyProg1 - 2017.04.12 at 23h 17m 54s.xml">
-      <configuration name="CodeGenVisitorTest.emptyProg1" configurationId="JUnit" />
+    <history-entry file="TypeCheckVisitorTest - 2017.04.21 at 21h 22m 25s.xml">
+      <configuration name="TypeCheckVisitorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodeGenVisitorTest_emptyProg1 - 2017.04.12 at 23h 18m 43s.xml">
-      <configuration name="CodeGenVisitorTest.emptyProg1" configurationId="JUnit" />
+    <history-entry file="TypeCheckVisitorTest - 2017.04.21 at 21h 22m 35s.xml">
+      <configuration name="TypeCheckVisitorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodeGenVisitorTest_emptyProg1 - 2017.04.12 at 23h 20m 10s.xml">
-      <configuration name="CodeGenVisitorTest.emptyProg1" configurationId="JUnit" />
+    <history-entry file="TypeCheckVisitorTest - 2017.04.21 at 21h 22m 44s.xml">
+      <configuration name="TypeCheckVisitorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodeGenVisitorTest_emptyProg1 - 2017.04.12 at 23h 22m 14s.xml">
-      <configuration name="CodeGenVisitorTest.emptyProg1" configurationId="JUnit" />
+    <history-entry file="testcases - 2017.04.21 at 21h 18m 10s.xml">
+      <configuration name="testcases" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142117000" />
+    <option name="totallyTimeSpent" value="251430000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3659306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39274448" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24524158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3001464" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2877013" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08201893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.074132495" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1005,7 +976,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1014,149 +985,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Scanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/ScannerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Name.java" />
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Test1.java" />
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/SridharTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/NarendraTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/SravanthiTests.java" />
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/ScannerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="97" column="50" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/WhileStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/BinaryExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/IdentChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/FilterOpChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/Tuple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/IfStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/ConstantExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/ASTNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/ChainElem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/BinaryChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/SleepStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/ASTTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/ASTTest2.java" />
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/ParamDec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/IdentLValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/Chain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/IdentExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/FrameOpChain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1177,7 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1185,23 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/CodeGenUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1212,58 +1022,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/ParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2352">
-          <caret line="249" column="5" selection-start-line="249" selection-start-column="5" selection-end-line="249" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="487" column="0" selection-start-line="487" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;method#program#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#paramDec#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#ifProduction#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#arrowOp#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#filterOp#0;class#Parser#0" expanded="false" />
-            <element signature="method#filterOp#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#frameOp#0;class#Parser#0" expanded="false" />
-            <element signature="method#frameOp#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#imageOp#0;class#Parser#0" expanded="false" />
-            <element signature="method#imageOp#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#arg#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#expression#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#factor#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#relOp#0;class#Parser#0" expanded="false" />
-            <element signature="method#relOp#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#weakOP#0;class#Parser#0" expanded="false" />
-            <element signature="method#weakOP#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#strongOp#0;class#Parser#0" expanded="false" />
-            <element signature="method#strongOp#0;class#Parser#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/TypeCheckVisitorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/ParserTest.java" />
     <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/ASTVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1275,18 +1034,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
-          <folding>
-            <element signature="e#1369#1370#0" expanded="false" />
-            <element signature="e#1407#1408#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/TypeCheckVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="295" column="66" selection-start-line="295" selection-start-column="12" selection-end-line="295" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1294,7 +1041,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
           <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1303,22 +1049,121 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding>
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Name.java" />
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/BooleanLitExpression.java">
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/PLPRuntimeLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Enum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="129" column="18" selection-start-line="129" selection-start-column="18" selection-end-line="129" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/image/BufferedImageOp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/Expression.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/BooleanLitExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5882">
+          <caret line="408" column="36" selection-start-line="408" selection-start-column="36" selection-end-line="408" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/ASTTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/IdentExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/PLPRuntimeImageOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/ChainElem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/Chain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/FilterOpChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/PLPRuntimeFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" column="61" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/PLPRuntimeFilterOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="53" column="42" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/CodeGenUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="20" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Compiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1327,40 +1172,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
           <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Scanner.java">
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/PLPRuntimeImageIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="400" column="11" selection-start-line="400" selection-start-column="7" selection-end-line="400" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="595">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/BinaryChain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="1309">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cop5556sp17/CodeGenVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="481" column="29" selection-start-line="481" selection-start-column="29" selection-end-line="481" selection-end-column="29" />
+        <state relative-caret-position="4369">
+          <caret line="280" column="11" selection-start-line="280" selection-start-column="11" selection-end-line="280" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/CodeGenVisitorTest1.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/ParserTest4.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/ParserTest5.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/ParserTest3.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/ParserTest2.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Test/ASTTest_1.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Test/CodeGenVisitorTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Test/MadamTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Test/ParserTest1.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/Test/testcases.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/TypeCheckVisitorTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/AST/IdentChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cop5556sp17/CodeGenVisitorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        <state relative-caret-position="340">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cop5556sp17/TypeCheckVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1422,7 +1299,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
